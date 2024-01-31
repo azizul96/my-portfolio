@@ -1,38 +1,60 @@
-"use client"
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useState } from "react";
+'use client'
+import Link from 'next/link';
+import React from 'react';
+import Logo from './Logo';
+import { usePathname } from 'next/navigation';
+import { GithubIcon, LinkedInIcon, TwitterIcon } from './Icon';
+import { motion } from "framer-motion"
 
-const Navbar = () => {
-    const [open, setOpen] = useState(false)
-    const pathname = usePathname()
-    const routes = [
-        {id: 1, path: "/", name: "Home"},
-        {id: 2, path: "/about", name: "About"},
-        {id: 3, path: "/skills", name: "Skills"},
-        {id: 4, path: "/portfolio", name: "Portfolio"}
-    ]
+const CustomLink = ({href, title, className=""}) =>{
+    const router = usePathname()
     return (
-        <nav className="flex justify-between bg-green-500 p-6">
-            <div>
-                <Link href="/">Azizul</Link>
-            </div>
-            
-            <div className="">
-                <div className="md:hidden text-xl cursor-pointer" onClick={()=> setOpen(!open)}>
-                    {
-                        open === true ? <i class="fa-solid fa-xmark"></i>
-                        : <i class="fa-solid fa-bars"></i>
-                    }
-                </div>
-                <ul className={`md:flex items-center gap-10  ${open ? "" : "hidden"}`}>
-                    {
-                        routes.map(route => <li className="" key={route.id}><Link className={`link ${pathname === route.path ? 'underline ' : ''}`} href={route.path}>{route.name}</Link></li>)
-                    }
-                </ul>
+        <Link href={href} className={`${className} relative group `}>
+            {title}
+
+            <span className={`h-[2px] inline-block bg-dark absolute left-0 -bottom-0.5  group-hover:w-full transition-[width] ease duration-300 ${router === href ? 'w-full': 'w-0'}`}>&nbsp;</span>
+        </Link>
+    )
+}
+const Navbar = () => {
+    return (
+        <header className='w-full px-32 py-8 font-medium flex items-center justify-between'>
+            <nav>
+                <CustomLink href="/" title="Home" className='mr-4'/>
+                <CustomLink href="/about" title="About"  className='mx-4' /> 
+                <CustomLink href="/project" title="Projects" className='mx-4' />
+                <CustomLink href="/article" title="Article" className='ml-4'/>
                 
+            </nav>
+            
+            <nav className='flex items-center justify-center flex-wrap'>
+                <motion.a href="https://linkedin.com" target={"_blank"}
+                whileHover={{y:-2}}
+                whileTap={{scale:0.9}}
+                className='w-6 mx-3'
+                >
+                    <GithubIcon/>
+                </motion.a>
+                <motion.a href="https://linkedin.com" target={"_blank"}
+                whileHover={{y:-2}} 
+                whileTap={{scale:0.9}}
+                className='w-6 mx-3'
+                >
+                    <LinkedInIcon/>
+                </motion.a>
+                <motion.a href="https://linkedin.com" target={"_blank"}
+                whileHover={{y:-2}}
+                whileTap={{scale:0.9}}
+                className='w-6 ml-3'
+                >
+                    <TwitterIcon/>
+                </motion.a>
+                
+            </nav>
+            <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
+                <Logo/>
             </div>
-        </nav>
+        </header>
     );
 };
 
