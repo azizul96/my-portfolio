@@ -4,7 +4,7 @@ import AnimatedText from "@/Components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/Components/Icon";
 import HireMe from "@/Components/HireMe";
-import ProfileImg from '../../public/images/profile/developer-pic-1.png';
+import ProfileImg from '../../public/profile.png';
 
 export default function Home() {
   return (
