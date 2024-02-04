@@ -6,6 +6,8 @@ import Image from 'next/image';
 import React, { useEffect, useRef } from 'react';
 import ProfilePic from '../../../public/azizul.png'
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
+import Skills from '@/Components/Skills';
+import Education from '@/Components/Education';
 
 
 
@@ -73,6 +75,10 @@ const About = () => {
                             </div>
                         </div>
                     </div>
+
+                    <Skills/>
+                    <Education/>
+                    {/* <Experience/> */}
                 </Layout>
             </main>
         </>
