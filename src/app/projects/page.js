@@ -1,3 +1,4 @@
+"use client"
 import AnimatedText from '@/Components/AnimatedText';
 import { GithubIcon } from '@/Components/Icon';
 import Layout from '@/Components/Layout';
@@ -6,17 +7,22 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import p1 from '../../../public/images/projects/p1.png'
+import { motion } from 'framer-motion';
 
+
+const FramerImage = motion(Image);
 
 const FeaturedProject = ({type, title, summery, img, link, gitHub}) =>{
-
 
     return(
         <article className='w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl'>
             <div className=' absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl' />
 
             <Link href={link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded-lg'>
-                <Image src={img} alt={title} className='w-full h-auto' />
+                <FramerImage src={img} alt={title} className='w-full h-auto' 
+                whileHover={{scale:1.05}}
+                transition={{duration:0.2}}
+                />
             </Link>
             <div className='w-1/2 flex flex-col items-start justify-between pl-6 '>
                 <span className='text-primary font-medium text-xl'>{type}</span>
@@ -44,7 +50,10 @@ const Project = ({type, title, img, link, gitHub}) =>{
             <div className=' absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl' />
 
             <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
-                <Image src={img} alt={title} className='w-full h-auto' />
+                <FramerImage src={img} alt={title} className='w-full h-auto' 
+                whileHover={{scale:1.05}}
+                transition={{duration:0.2}}
+                />
             </Link>
             <div className='w-full flex flex-col items-start justify-between mt-4'>
                 <span className='text-primary font-medium text-xl'>{type}</span>

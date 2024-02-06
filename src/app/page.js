@@ -8,7 +8,7 @@ import ProfileImg from '../../public/profile.png';
 
 export default function Home() {
   return (
-    <main className="flex items-center text-dark w-full min-h-screen ">
+    <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
        <Layout>
 
         <div className="flex items-center justify-between w-full">
@@ -20,10 +20,10 @@ export default function Home() {
 
             <p className="my-4 text-base font-medium">As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications.  Explore my latest projects and articles, showcasing my expertise in React.js and web development.</p>
             <div className="flex items-center self-start mt-2 ">
-              <Link href="/dummy.pdf" target={"_blank"} className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg  font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark" 
+              <Link href="/dummy.pdf" target={"_blank"} className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg  font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light" 
               download={true} >Resume <LinkArrow className={"w-6 ml-1"}/></Link>
 
-              <Link href="mailto:azizulislam53468@gmail.com" target={"_blank"} className="ml-4 text-lg font-medium capitalize text-dark underline">Contact </Link>
+              <Link href="mailto:azizulislam53468@gmail.com" target={"_blank"} className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light">Contact </Link>
             </div>
           </div>
         </div>
