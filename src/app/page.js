@@ -5,9 +5,12 @@ import Link from "next/link";
 import { LinkArrow } from "@/Components/Icon";
 import HireMe from "@/Components/HireMe";
 import ProfileImg from '../../public/profile.png';
+import TransitionEffect from "@/Components/TransitionEffect";
 
 export default function Home() {
   return (
+    <>
+    <TransitionEffect/>
     <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
        <Layout className="pt-0 md:pt-16 sm:pt-8 ">
 
@@ -33,10 +36,13 @@ export default function Home() {
         </div>
        </Layout>
 
+       <div>
        <HireMe />
+       </div>
        <div className="absolute right-8 bottom-8 lg:hidden">
         <p className='text-7xl px-1 inline-block w-24'> &#128161;</p>
        </div>
     </main>
+    </>
   )
 }

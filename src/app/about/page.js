@@ -9,6 +9,7 @@ import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import Skills from '@/Components/Skills';
 import Education from '@/Components/Education';
 import Experience from '@/Components/Experience';
+import TransitionEffect from '@/Components/TransitionEffect';
 
 
 
@@ -41,6 +42,7 @@ const About = () => {
             <Head>
                 <title> Azizul | About Page </title>
             </Head>
+            <TransitionEffect/>
             <main className='flex w-full flex-col justify-center items-center dark:text-light'>
                 <Layout className='pt-16'>
                     <AnimatedText text="Passion Fuels Purpose!" className="text-center mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8 "/>
