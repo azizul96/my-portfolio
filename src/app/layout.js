@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={""}>
       <head>
-      
+        
       </head>
       <body className={`${montserrat.variable} bg-light w-full min-h-screen dark:bg-dark `}>
         <TransitionEffect />

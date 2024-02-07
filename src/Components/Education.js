@@ -43,22 +43,19 @@ const Education = () => {
                 <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
                     <Details 
                     type="Bachelor Of Science In Computer Science" 
-                    time="2016-2020" 
-                    place="Massachusetts Institute Of Technology (MIT)" 
-                    info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                    Intelligence."  />
+                    time="2020-2024" 
+                    place="University Of Global Village, Barisal" 
+                    info="The Bachelor Degree in CSE consists of general education courses, mathematics courses, computer core courses, computer project work, computer elective courses. Each student is required to successfully complete a minimum of 136 credit hours to graduate. The student is required to take courses of 132 credits. The remaining 4 credits will be made up of project submission."  />
                     <Details 
-                    type="Bachelor Of Science In Computer Science" 
-                    time="2016-2020" 
-                    place="Massachusetts Institute Of Technology (MIT)" 
-                    info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                    Intelligence."  />
+                    type="Diploma In Computer Science" 
+                    time="2015-2019" 
+                    place="Barguna Polytechnic Institute, Barisal" 
+                    info="Diploma in computer science is a 4-year long program consisting of 8 semesters (1 Semester = 6 months). The final and the midterm exams of each semester are conducted under the supervision of the Bangladesh Technical Education Board (BTEB)."  />
                     <Details 
-                    type="Bachelor Of Science In Computer Science" 
-                    time="2016-2020" 
-                    place="Massachusetts Institute Of Technology (MIT)" 
-                    info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                    Intelligence."  />
+                    type="Complete Web Development (Course)" 
+                    time="2023 (6-month)" 
+                    place="Programming Hero" 
+                    info="Relevant courses included HTML, CSS, Tailwind, JavaScript, React MongoDB, Express JS, Node JS, Firebase, JWT"  />
                 </ul>
             </div>
         </div>

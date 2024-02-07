@@ -65,21 +65,21 @@ const Navbar = () => {
             </nav>
             
             <nav className='flex items-center justify-center flex-wrap'>
-                <motion.a href="https://linkedin.com" target={"_blank"}
+                <motion.a href="https://github.com/azizul96" target={"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 className='w-6 mx-3 '
                 >
                     <GithubIcon/>
                 </motion.a>
-                <motion.a href="https://linkedin.com" target={"_blank"}
+                <motion.a href="https://www.linkedin.com/in/azizul-islam96/" target={"_blank"}
                 whileHover={{y:-2}} 
                 whileTap={{scale:0.9}}
                 className='w-6 mx-3 '
                 >
                     <LinkedInIcon/>
                 </motion.a>
-                <motion.a href="https://linkedin.com" target={"_blank"}
+                <motion.a href="https://twitter.com/azizul_islam96" target={"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 className='w-6 ml-3'
@@ -117,21 +117,21 @@ const Navbar = () => {
                 </nav>
                 
                 <nav className='flex items-center justify-center flex-wrap mt-2'>
-                    <motion.a href="https://linkedin.com" target={"_blank"}
+                    <motion.a href="https://github.com/azizul96" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className='w-6 mx-3 bg-light dark:bg-dark rounded-full'
                     >
                         <GithubIcon/>
                     </motion.a>
-                    <motion.a href="https://linkedin.com" target={"_blank"}
+                    <motion.a href="https://www.linkedin.com/in/azizul-islam96/" target={"_blank"}
                     whileHover={{y:-2}} 
                     whileTap={{scale:0.9}}
                     className='w-6 mx-3'
                     >
                         <LinkedInIcon/>
                     </motion.a>
-                    <motion.a href="https://linkedin.com" target={"_blank"}
+                    <motion.a href="https://twitter.com/azizul_islam96" target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className='w-6 ml-3'
