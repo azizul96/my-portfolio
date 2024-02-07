@@ -1,3 +1,4 @@
+"use client"
 import Layout from "@/Components/Layout";
 import Image from "next/image";
 import AnimatedText from "@/Components/AnimatedText";

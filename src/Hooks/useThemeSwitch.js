@@ -1,4 +1,6 @@
-import React, { useEffect, useLayoutEffect, useState } from 'react';
+'use client'
+import { useEffect, useState } from "react";
+
 
 const useThemeSwitch = () => {
 

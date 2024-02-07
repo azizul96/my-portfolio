@@ -1,5 +1,5 @@
+'use client'
 import React from 'react';
-import { CircularText } from './Icon';
 import Image from 'next/image';
 import logoImg from '../../public/hm-logo.png'
 import Link from 'next/link';

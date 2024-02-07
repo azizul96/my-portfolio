@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Logo from './Logo';
 import { usePathname } from 'next/navigation';
 import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon, TwitterIcon } from './Icon';
