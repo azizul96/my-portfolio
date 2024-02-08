@@ -6,8 +6,8 @@ import Link from 'next/link';
 import React, { useRef } from 'react';
 import Image from 'next/image';
 import { motion, useMotionValue } from 'framer-motion';
-import article1 from '../../../public/images/articles/pagination component in reactjs.jpg'
-import article2 from '../../../public/images/articles/create loading screen in react js.jpg'
+import article1 from '../../../public/images/articles/linkedin-post-1.png'
+import article2 from '../../../public/images/articles/linkedin-post-2.png'
 import article3 from '../../../public/images/articles/form validation in reactjs using custom react hook.png'
 import article4 from '../../../public/images/articles/create modal component in react using react portals.png'
 import article5 from '../../../public/images/articles/smooth scrolling in reactjs.png'
@@ -103,20 +103,20 @@ const Articles = () => {
 
                     <ul className='grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16'>
                         <Featured 
-                        title="Build A Custom Pagination Component In Reactjs From Scratch"
-                        summery="Learn how to build a custom pagination component in ReactJS from scratch. 
-                        Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
+                        title="Understanding Hooks In React"
+                        summery="Learn how to build a Hook component in ReactJS from scratch. 
+                        Follow this step-by-step guide to integrate Hooks in your ReactJS project."
                         time="9 min read"
-                        link="/"
+                        link="https://www.linkedin.com/posts/azizul-islam96_react-hooks-activity-7153611990773469186-JXnD?utm_source=share&utm_medium=member_desktop"
                         img={article1}
                         />
 
                         <Featured 
-                        title="Build A Custom Pagination Component In Reactjs From Scratch"
-                        summery="Learn how to build a custom pagination component in ReactJS from scratch. 
-                        Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
-                        time="9 min read"
-                        link="/"
+                        title="An Amazing Guide On JS Async Await!"
+                        summery="Learn how to build a Async function in ReactJS . 
+                        Follow this step-by-step guide to integrate JS Async Await in your ReactJS project."
+                        time="10 min read"
+                        link="https://www.linkedin.com/posts/azizul-islam96_javascript-async-await-activity-7157583143305179138-4nxA?utm_source=share&utm_medium=member_desktop"
                         img={article2}
                         />
                         
@@ -130,19 +130,19 @@ const Articles = () => {
                         img={article3}
                         />
                         <Article
-                        title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+                        title="Creating An Efficient Modal Component In React Using Hooks And Portals"
                         date="02/06/2024"
                         link="/"
                         img={article4}
                         />
                         <Article
-                        title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+                        title="Silky Smooth Scrolling In Reactjs: A Step-By-Step Guide For React Developers"
                         date="02/06/2024"
                         link="/"
                         img={article5}
                         />
                         <Article
-                        title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+                        title="Redux Simplified: A Beginner's Guide For Web Developers"
                         date="02/06/2024"
                         link="/"
                         img={article6}
