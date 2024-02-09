@@ -32,7 +32,7 @@ export const GithubIcon = ({ className, ...rest }) => (
       />
     </svg>
   );
-  // #0A66C2
+  
   export const LinkedInIcon = ({ className, ...rest }) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
