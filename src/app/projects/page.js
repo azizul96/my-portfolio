@@ -10,6 +10,7 @@ import p1 from '../../../public/images/projects/p1.png'
 import p2 from '../../../public/images/projects/p2.png'
 import p3 from '../../../public/images/projects/p3.png'
 import p4 from '../../../public/images/projects/p4.png'
+import p5 from '../../../public/images/projects/p5.png'
 import { motion } from 'framer-motion';
 import TransitionEffect from '@/Components/TransitionEffect';
 
@@ -105,6 +106,17 @@ const Projects = () => {
                     />
 
                     <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
+                        <div className='col-span-12'>
+                            <FeaturedProject
+                            title="e-commerce Website" 
+                            summery="E-Shop e-commerce Website - This is a fully functional e-commerce website. In this website user will experience a fully functional e-commerce platform. This is a single page application create using NextJS 14 and MongoDB." 
+                            link="https://e-shop-azizul.vercel.app/"
+                            gitHub1="https://github.com/azizul96/e-commerce"
+                            gitHub2="https://github.com/azizul96/e-commerce"
+                            type="Full-Stack Project"
+                            img={p5}
+                            />
+                        </div>
                         <div className='col-span-12'>
                             <FeaturedProject
                             title="Hotel Booking Website" 

@@ -3,7 +3,7 @@ import AnimatedText from '@/Components/AnimatedText';
 import Layout from '@/Components/Layout';
 import Head from 'next/head';
 import Image from 'next/image';
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import ProfilePic from '../../../public/azizul.png'
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import Skills from '@/Components/Skills';

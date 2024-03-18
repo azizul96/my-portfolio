@@ -5,7 +5,7 @@ import AnimatedText from "@/Components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/Components/Icon";
 import HireMe from "@/Components/HireMe";
-import ProfileImg from '../../public/profile.png';
+import ProfileImg from '../../public/my-img.png';
 import TransitionEffect from "@/Components/TransitionEffect";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
 
         <div className="flex items-center justify-between w-full lg:flex-col">
           <div className="w-1/2 md:w-full">
-            <Image className="w-full h-auto lg:hidden md:inline-block md:w-full" src={ProfileImg} alt="Azizul" 
+            <Image className="w-full h-auto lg:hidden md:inline-block md:w-full" src={ProfileImg} alt="Azizul"
             priority
             sizes="(max-width: 768px) 100vw,
             (max-width: 1200px) 50vw,
