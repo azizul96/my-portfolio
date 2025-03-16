@@ -92,7 +92,7 @@ const Navbar = () => {
         <nav>
           <CustomLink href="/" title="Home" className="mr-4" />
           <CustomLink href="/about" title="About" className="mx-4" />
-          <CustomLink href="/skill" title="Skill" className="ml-4" />
+          <CustomLink href="/skill" title="Skill" className="mx-4" />
           <CustomLink href="/projects" title="Projects" className="mx-4" />
           <CustomLink href="/article" title="Article" className="ml-4" />
         </nav>
@@ -108,7 +108,7 @@ const Navbar = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="https://www.linkedin.com/in/azizul-islam96/"
+            href="https://www.linkedin.com/in/azizulislam96/"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
